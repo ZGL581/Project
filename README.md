@@ -1,0 +1,1 @@
+The C-RC approach was employed to perform experimental validations on the Mackey-Glass time series task and the MNIST handwritten digit recognition task, with both static and dynamic key modes implemented in the experimental setup.
