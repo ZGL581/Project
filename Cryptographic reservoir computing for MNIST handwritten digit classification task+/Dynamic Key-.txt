@@ -129,11 +129,9 @@ esn_cell = EchoStateRNNCell(
 
 # 5. Dynamic key generation
 def generate_dynamic_key(batch_size, key_size_per_step, dynamic_steps, total_steps=28, correct_key=True,
-                         rng=RandomState(42), base_seed=12345, sample_seed=None):  # 新增sample_seed参数
+                         rng=RandomState(42), base_seed=12345, sample_seed=None):  #
     """
-    Generate dynamic keys (improved version):
-    - correct_key=True: Generate different 32-bit random patterns for first 20 steps based on different seeds
-    新增：sample_seed=None → 全局固定密钥；sample_seed为具体值 → 样本专属640bit密钥
+
     """
     if correct_key:
         # Deterministic generation: use different seed for each step to ensure fixed but varied 32-bit patterns
